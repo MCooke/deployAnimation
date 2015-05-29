@@ -1,0 +1,51 @@
+@import "bootstrap/bootstrap";
+@import "vendor/mdcolours";
+@import "functions";
+@import "fontProps";
+@import "base";
+
+$brand_primary: $blue400;
+$brand_accent: $redA700;
+$brand_white: $grey100;
+
+$breakpoints: (
+	default: '',
+	small: 768px,
+	medium: 992px,
+	large: 1200px
+	);
+
+
+.hide{
+	display: none;
+}
+
+.canvas{
+	position: relative;
+	top: 300px;
+	height: 500px;
+  overflow: hidden;
+}
+
+.item{
+	position: absolute;
+	width: 230px;
+	height: 230px;
+	// transition: 3s;
+	&-dev{
+		left: 0;
+	}
+	&-code{
+		right: -600px;
+		width: 800px;
+		height: 150px;
+		top: 40px;
+	}
+	&-github{
+		right: 0;
+	}
+}
+
+.left2right{
+	transform: translate3d(600px,0,0);
+}

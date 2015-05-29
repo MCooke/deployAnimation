@@ -1,0 +1,51 @@
+.stub {
+	@extend .row;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	&-summary {
+		.stub_aside{
+			@extend .col-sm-12;
+		}
+		.stub_main {
+			@extend .col-sm-12;
+		}
+	}
+	&_aside {
+		@extend .col-xs-4;
+		@extend .col-sm-5;
+		&-small {
+			height: 50px;
+		}
+		&-right {
+			float: right;
+		}
+	}
+	&_main {
+		@extend .col-xs-8;
+		@extend .col-sm-7;
+	}
+	&_title {
+		@extend %fontSize2;
+	}
+	&_thumb {
+		height: 125px;
+		background-size: cover;
+		background-position: 50%;
+	}
+	&_rating{
+		color: $brand_primary;
+		white-space: nowrap;
+	}
+	&_footer{
+		margin-top: 20px;
+		@extend %fontSize5;
+		&-right {
+			text-align: right;
+		}
+	}
+	&_wrapper{
+		@extend .col-xs-12;
+		// padding-bottom: 10px;
+		border-bottom: 1px solid $grey400;
+	}
+}

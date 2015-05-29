@@ -1,0 +1,32 @@
+{
+	"1": {
+		"name": "Strand Palace",
+		"distance": "5",
+		"stars": "4",
+		"price": "350"
+	},
+	"2": {
+		"name": "Grand Central Hotel",
+		"distance": "2",
+		"stars": "3",
+		"price": "290"
+	},
+	"3": {
+		"name": "Grange City",
+		"distance": "3",
+		"stars": "5",
+		"price": "450"
+	},
+	"4": {
+		"name": "Grange Tower Bridge",
+		"distance": "1",
+		"stars": "2",
+		"price": "150"
+	},
+	"5": {
+		"name": "Holiday Inn Bloomsbury",
+		"distance": "9",
+		"stars": "1",
+		"price": "90"
+	}
+}

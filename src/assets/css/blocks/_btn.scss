@@ -1,0 +1,30 @@
+.btn{
+	@extend %fontSize5;
+	background: $brand_white;
+	border: 0px solid $brand_white;
+	border-radius: 3px;
+	padding: 10px 15px;
+	text-decoration: none;
+	display: inline-block;
+	&-primary, &-accent{
+		color: $brand_white;
+	}
+	&-primary{
+		background: $brand_primary;
+	}
+	&-accent{
+		background: $brand_accent;
+	}
+	&-lg{
+		@extend %fontSize4;
+		padding: 5px 25px;
+	}
+	&-block {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	&-thin {
+		padding: 10px 5px;
+	}
+}

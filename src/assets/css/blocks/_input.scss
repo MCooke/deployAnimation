@@ -1,0 +1,19 @@
+.input {
+	position: relative;
+	border-top: 1px solid $grey700;
+  border-right: 1px solid $grey700;
+	&_field{
+		@extend %fontSize5;
+		width: 100%;
+		padding: 25px 10px 10px 10px;
+		border: none;
+		background: transparent;
+	}
+	&_label{
+		@extend %fontSize6;
+		color: $grey700;
+		position: absolute;
+		top: 5px;
+		left: 25px;
+	}
+}

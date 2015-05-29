@@ -1,0 +1,21 @@
+.control {
+	@extend .row;
+	@extend %fontSize4;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid $grey200;
+	&-stage {
+		padding-bottom: 10px;
+		border: none;
+	}
+	&_label {
+		@extend .col-xs-6;
+		@extend .col-sm-12;
+	}
+	&_input {
+		@extend .col-xs-6;
+		@extend .col-sm-12;
+		text-align: right;
+		text-decoration: underline;
+	}
+}

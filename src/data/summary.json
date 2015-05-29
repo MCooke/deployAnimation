@@ -1,0 +1,14 @@
+{
+	"seat": {
+		"hasShow": "1"
+	},
+	"hotels": {
+		"hasShow": "1",
+		"hasSeat": "1"
+	},
+	"payment": {
+		"hasShow": "1",
+		"hasSeat": "1",
+		"hasHotel": "1"
+	}
+}

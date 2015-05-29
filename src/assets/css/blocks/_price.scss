@@ -1,0 +1,12 @@
+.price {
+	text-align: right;
+	&_total {
+
+	}
+	&_amount {
+		@extend %fontSize3;
+	}
+	&_description {
+
+	}
+}
