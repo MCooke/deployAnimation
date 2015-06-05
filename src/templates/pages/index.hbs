@@ -7,10 +7,97 @@ lead: Welcome to my blog!
 
 <div class="container">
 	<div class="row">
-		<div class="col-xs-12 canvas">
-			<img src="http://placehold.it/500x500" alt="" class="item animated hide infinite item-code">
-			<img src="http://placehold.it/500x500" alt="" class="item animated item-dev">
-			<img src="http://placehold.it/500x500" alt="" class="item animated item-github">
+		<div id="canvas" class="col-xs-12 canvas">
+			<img id="item-code" src="assets/imgs/code.png" alt="" class="item animated hide infinite item-code">
+			<img id="item-dev" src="assets/imgs/dev.png" alt="" class="item animated hide item-dev item-left">
+			<img id="item-github" src="assets/imgs/github.png" alt="" class="item animated hide item-github item-right">
+			<img id="item-shippable" src="assets/imgs/shippable.png" alt="" class="item animated hide item-shippable item-right">
+			<img id="item-binoc" src="assets/imgs/binoc.png" alt="" class="item animated hide item-binoc item-small item-aboveRight">
+			<img id="item-tarball" src="assets/imgs/tarball.png" alt="" class="item animated hide infinite item-tarball">
+			<img id="item-traffic" src="assets/imgs/trafficVert.png" alt="" class="item animated hide infinite item-traffic">
+			<div class="codeBlock hide col-xs-4">
+				<h3 class="hide">Lint</h3>
+				<ul>
+					<li class="hide">File 1</li>
+					<li class="hide">File 2</li>
+					<li class="hide">File 3</li>
+					<li class="hide">File 4</li>
+					<li class="hide">File 5</li>
+					<li class="hide">File 6</li>
+					<li class="hide">File 7</li>
+					<li class="hide">File 8</li>
+					<li class="hide">File 9</li>
+					<li class="hide">File 10</li>
+				</ul>
+			</div>
+			<div class="codeBlock hide col-xs-4">
+				<h3 class="hide">Hint</h3>
+				<ul>
+					<li class="hide">File 1</li>
+					<li class="hide">File 2</li>
+					<li class="hide">File 3</li>
+					<li class="hide">File 4</li>
+					<li class="hide">File 5</li>
+					<li class="hide">File 6</li>
+					<li class="hide">File 7</li>
+					<li class="hide">File 8</li>
+					<li class="hide">File 9</li>
+					<li class="hide">File 10</li>
+				</ul>
+			</div>
+			<div class="codeBlock hide col-xs-4">
+				<h3 class="hide">Test</h3>
+				<ul>
+					<li class="hide">File 1</li>
+					<li class="hide">File 2</li>
+					<li class="hide">File 3</li>
+					<li class="hide">File 4</li>
+					<li class="hide">File 5</li>
+					<li class="hide">File 6</li>
+					<li class="hide">File 7</li>
+					<li class="hide">File 8</li>
+					<li class="hide">File 9</li>
+					<li class="hide">File 10</li>
+				</ul>
+			</div>
+			<div id="stack-old" class="stack hide">
+				<div class="box hide">
+				</div>
+				<div class="box hide">
+				</div>
+				<div class="box hide">
+				</div>
+				<div class="box hide">
+				</div>
+				<div class="box hide">
+				</div>
+				<div class="box hide">
+				</div>
+				<div class="loader loader-old hide">
+					Load Balancer
+				</div>
+			</div>
+			<div id="stack-new" class="stack hide">
+				<div class="box hide">
+				</div>
+				<div class="box hide">
+				</div>
+				<div class="box hide">
+				</div>
+				<div class="box hide">
+				</div>
+				<div class="box hide">
+				</div>
+				<div class="box hide">
+				</div>
+				<div class="loader hide">
+					Load Balancer
+				</div>
+			</div>
+			<div id="dns" class="dns hide">
+				DNS
+				<div class="dns_pointer"></div>
+			</div>
 		</div>
 	</div>
 </div>
