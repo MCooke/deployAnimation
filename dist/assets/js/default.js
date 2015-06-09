@@ -104,7 +104,7 @@ function stage4(){
 	setTimeout( function(){
 		$tarball.removeClass('rollIn').addClass('jello infinite');
 		setTimeout( function(){
-			$tarball.removeClass('jello infinite').addClass('rollOut');
+			// $tarball.removeClass('jello infinite').addClass('rollOut');
 		}, 2500);
 	},500);
 }
@@ -122,6 +122,9 @@ function stage5(){
 		$stackLoader.removeClass('zoomInUp');
 		setTimeout( function(){
 			$stackNew.addClass('animated swing');
+			setTimeout( function(){
+				$stackNew.removeClass('swing').addClass('pulse infinite');
+			}, 1000);
 		}, 1000);
 		$('#stack-new .box').each(function(){
 			var $this = $( this );
@@ -138,18 +141,19 @@ function stage5(){
 function stage6(){
 	clean();
 
-	$stackNew.removeClass('hide');
+	$stackNew.removeClass('hide infinite swing');
 	$tarball.removeClass('hide').addClass('item-middle bounceInDown');
 	setTimeout( function(){
 		$tarball.removeClass('bounceInDown').addClass('fadeOutDown');
 		$stackNew.find('.box').addClass('box-tarred');
+		$stackNew.addClass('pulse infinite');
 	}, 1500);
 }
 
 function stage7(){
 	clean();
 
-	$stackNew.removeClass('hide').addClass('stack-half animated bounceInRight');
+	$stackNew.removeClass('hide infinite').addClass('stack-half animated bounceInRight');
 	$stackOld.removeClass('hide').addClass('stack-half animated bounceInLeft');
 	$stackNew.find('.box').removeClass('hide').addClass('box-tarred');
 	$stackNew.find('.loader').removeClass('hide');
@@ -157,10 +161,13 @@ function stage7(){
 	$stackOld.find('.loader').removeClass('hide');
 
 	setTimeout( function(){
+		$stackNew.removeClass('bounceInRight');
 		$dns.removeClass('hide').addClass('fadeIn animated');
 		$traffic.removeClass('hide').addClass('item-middle item-traffic jello infinite');
 		setTimeout( function(){
 			$dns.addClass('dns-right');
+			$stackNew.addClass('infinite pulse');
+			$traffic.removeClass('jello');
 		}, 2000);
 	}, 1000);
 }
@@ -176,6 +183,6 @@ function stage8(){
 	$stackOld.find('.loader').removeClass('hide');
 	$stackOld.addClass('hinge');
 	setTimeout(function(){
-		$stackNew.addClass('tada');
+		$stackNew.removeClass('pulse infinite').addClass('tada');
 	}, 1500)
 }
